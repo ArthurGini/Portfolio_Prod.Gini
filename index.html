@@ -1,53 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio: Prod. Gini</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prod Gini - Music Producer and Portfolio">
+  <meta name="keywords" content="Prod Gini, Music Producer, Music Portfolio, Beats, Tracks, YouTube">
+  <meta name="author" content="Prod Gini">
+  <title>Prod Gini | Music Producer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Prod. Gini</h1>
-        <p><i>Em obras...</i></p>
-        <h2><p>Minhas redes:</p></h2>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Prod Gini Logo">
+    </div>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <!-- <li><a href="#latest-video">Latest Video</a></li> -->
+        <li><a href="#links">Minhas Redes</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="links">
-            <a href="https://artists.landr.com/055855356963">
-                <img src="img/capa_minha_fe.png" alt="Youtube channel">
-                <h3>Ultimo Lançamento</h3>
-            </a>
-            </section>
-        <section class="links">
-            <a href="https://www.youtube.com/@ProdGini">
-                <img src="img/youtube.png" alt="Youtube channel">
-                <h3>Canal do youtube</h3>
-            </a>
-            </section>
-        <section class="links">
-            <a href="https://www.instagram.com/arthurgini/">
-                <img src="img/logo_insta.jpg" alt="Insta logo">
-                <h3>Instagram</h3>
-            </a>
-            </section>
-        <section class="links">
-            <a href="https://open.spotify.com/intl-pt/artist/4hZavO7nMHDg80PhEly9an?si=YuXPGfGDQsCpQQQFPTgKxw">
-                <img src="img/logo_spotify.jpg" alt="Sopotify logo">
-                <h3>Spotify</h3>
-            </a>
-            </section>
-        <section class="links">
-            <a href="https://soundcloud.com/arthurgini">
-                <img src="img/soundcloud.png" alt="Soundcloud logo">
-                <h3>Soundcloud</h3>
-            </a>
-            </section>
-    </main>
+  <div class="hero">
+    <h1>Prod. Gini</h1>
+    <p>Professional Music Production.</p>
+  </div>
 
-    <footer>
-        <p>&copy; 2024 Todos os direitos reservados.</p>
-    </footer>
+  <main>
+    <section id="portfolio">
+      <h2>Ultimo Lançamento:</h2>
+      <div class="highlight-link">
+        <a href="https://artists.landr.com/055855356963" target="_blank">Click Aqui pra ouvir o ultimo lançamento</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Serviços de produção:</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Catalogo de Beats</h3>
+          <p>Beats unicos vindo diretamente da gringa.</p>
+        </div>
+        <div class="service-item">
+          <h3>Produção musical</h3>
+          <p>Do inicio ao fim te auxilo a fazer aquele som.</p>
+        </div>
+        <div class="service-item">
+          <h3>Mix e Master</h3>
+          <p>Mix e Master professional garantindo que sim, seu som vai bater.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="latest-video">
+      <h2>Latest Video</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v=EVFbBC7N8Lg" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      <div class="highlight-link">
+        <a href="https://www.youtube.com/watch?v=v=EVFbBC7N8Lg" target="_blank">Watch on YouTube</a>
+      </div>
+    </section> -->
+
+    <section id="links">
+      <h2>Minhas Redes:</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/arthurgini/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@ProdGini" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://open.spotify.com/intl-pt/artist/4hZavO7nMHDg80PhEly9an?si=YuXPGfGDQsCpQQQFPTgKxw" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+        <!-- <a href="https://soundcloud.com/arthurgini" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a> -->
+        <a href="https://linkedin.com/arthurgini" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contato</h2>
+    <p>Me envie um email: <a href="mailto:arthurbgini@gmail.com">arthurbgini@gmail.com</a></p>
+    <p>&copy; 2024 Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
