@@ -1,26 +1,19 @@
-/* General Section Styling */
-section {
-  padding: 60px 20px;
-  text-align: center;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Heading (h2) Consistency */
-h2 {
-  font-size: 2.3rem;
-  margin-bottom: 20px;
-  color: #2e2e38;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Body and General Settings */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9;
   color: #333;
   line-height: 1.8;
   max-width: 100%;
+  border: none;
+  margin: 0;  /* Ensures no space around the body */
+  padding: 0; /* Ensures no padding within the body */
 }
 
 /* Header and Navigation */
@@ -30,6 +23,7 @@ header {
   align-items: center;
   background-color: #2e2e38;
   padding: 20px;
+  border: none; /* Removes any potential border from the header */
 }
 
 .nav-links {
@@ -62,6 +56,7 @@ header {
 .logo img {
   max-width: 80px; /* Adjust size */
   border-radius: 50%;
+  border: none; /* Ensures no borders around the logo */
 }
 
 /* Hero Section */
@@ -88,6 +83,21 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+  border: none; /* Removes any potential borders around main content */
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  text-align: center;
+  border: none; /* Removes any potential border from sections */
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  color: #2e2e38;
+  text-transform: uppercase;
 }
 
 /* Latest Track Section */
@@ -95,6 +105,7 @@ main {
   width: 100%;
   background-color: #333;
   margin: 20px 0;
+  border: none;
 }
 
 /* Highlight Link */
@@ -136,6 +147,7 @@ main {
   min-width: 250px;
   text-align: center;
   transition: transform 0.3s ease;
+  border: none; /* Ensures no borders around the service items */
 }
 
 .service-item:hover {
@@ -167,6 +179,7 @@ main {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  border: none; /* Removes any border from the iframe */
 }
 
 /* Social Media Section */
@@ -192,6 +205,7 @@ footer {
   background-color: #2e2e38;
   padding: 40px 0;
   text-align: center;
+  border: none; /* Ensures no border on the footer */
 }
 
 footer h2 {
