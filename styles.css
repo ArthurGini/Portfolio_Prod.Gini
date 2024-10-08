@@ -10,10 +10,6 @@ body {
   background-color: #f4f4f9;
   color: #333;
   line-height: 1.8;
-  max-width: 100%;
-  border: none;
-  margin: 0;  /* Ensures no space around the body */
-  padding: 0; /* Ensures no padding within the body */
 }
 
 /* Header and Navigation */
@@ -22,8 +18,12 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #2e2e38;
-  padding: 20px;
-  border: none; /* Removes any potential border from the header */
+  padding: 15px 20px;
+}
+
+.logo img {
+  max-width: 80px;
+  border-radius: 50%;
 }
 
 .nav-links {
@@ -32,18 +32,31 @@ header {
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 10px; /* Diminuído o espaçamento entre os links do menu */
 }
 
 .nav-links li a {
   color: #d4a373;
   text-decoration: none;
   font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 .nav-links li a:hover {
   color: #e7b98a;
 }
+
+/* Remove all link formatting */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e7b98a;
+}
+
 
 /* Mobile Menu Toggle Button */
 .menu-toggle {
@@ -53,16 +66,10 @@ header {
   color: #d4a373;
 }
 
-.logo img {
-  max-width: 80px; /* Adjust size */
-  border-radius: 50%;
-  border: none; /* Ensures no borders around the logo */
-}
-
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 0;
+  padding: 30px 20px;
   background-color: #1a1a1a;
   color: #f4f4f9;
 }
@@ -78,19 +85,60 @@ header {
   color: #d4a373;
 }
 
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #d4a373; /* Cor do botão combinando com a paleta */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #b89e58; /* Cor mais escura no hover */
+}
+
 /* Main Sections */
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
-  border: none; /* Removes any potential borders around main content */
+  padding: 40px 20px; /* Adicionado padding */
+}
+
+/* Mission, Vision and Values Section */
+.mission-vision-values {
+  display: flex;
+  justify-content: space-between; /* Alinhamento simétrico */
+  flex-wrap: wrap;
+  margin: 20px 0; /* Margem para espaçamento */
+}
+
+.mission, .vision, .values {
+  flex: 1;
+  min-width: 250px; /* Largura mínima para as colunas */
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Margem entre os blocos */
+}
+
+.values ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Espaçamento interno */
+}
+
+.values li {
+  margin: 5px 0; /* Espaçamento entre os itens da lista */
 }
 
 /* Section Styling */
 section {
-  padding: 40px 20px;
+  padding: 10px 10px 0px 0px;
   text-align: center;
-  border: none; /* Removes any potential border from sections */
 }
 
 h2 {
@@ -100,12 +148,18 @@ h2 {
   text-transform: uppercase;
 }
 
-/* Latest Track Section */
-.track audio {
+/* Gallery Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
   width: 100%;
-  background-color: #333;
-  margin: 20px 0;
-  border: none;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Highlight Link */
@@ -147,7 +201,6 @@ h2 {
   min-width: 250px;
   text-align: center;
   transition: transform 0.3s ease;
-  border: none; /* Ensures no borders around the service items */
 }
 
 .service-item:hover {
@@ -164,11 +217,24 @@ h2 {
   color: #666;
 }
 
-/* Latest Video Section */
-#latest-video {
-  margin-bottom: 60px;
+/* Media Kit Section */
+.download-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #d4a373; /* Cor do botão */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
 }
 
+.download-button:hover {
+  background-color: #b89e58; /* Cor mais escura no hover */
+}
+
+/* Latest Video Section */
 .video-container {
   display: flex;
   justify-content: center;
@@ -179,7 +245,6 @@ h2 {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  border: none; /* Removes any border from the iframe */
 }
 
 /* Social Media Section */
@@ -191,7 +256,7 @@ h2 {
 }
 
 .social-icons a {
-  color: #2e2e38;
+  color: white;
   font-size: 2.5rem;
   transition: color 0.3s ease;
 }
@@ -203,9 +268,8 @@ h2 {
 /* Footer */
 footer {
   background-color: #2e2e38;
-  padding: 40px 0;
+  padding: 40px 20px;
   text-align: center;
-  border: none; /* Ensures no border on the footer */
 }
 
 footer h2 {
@@ -229,7 +293,6 @@ footer a:hover {
 }
 
 /* Responsive Design */
-/* For Laptops */
 @media (max-width: 1200px) {
   .service-list {
     flex-direction: column;
@@ -244,12 +307,20 @@ footer a:hover {
   .video-container iframe {
     width: 100%;
   }
+
+  .mission-vision-values {
+    flex-direction: column; /* Para telas menores */
+    align-items: center; /* Centraliza */
+  }
+
+  .mission, .vision, .values {
+    width: 90%; /* Largura ajustada */
+  }
 }
 
-/* For Tablets */
 @media (max-width: 768px) {
   .hero {
-    padding: 30px 0;
+    padding: 20px 15px;
   }
 
   .hero h1 {
@@ -272,7 +343,7 @@ footer a:hover {
   }
 
   .nav-links li {
-    margin: 20px 0;
+    margin: 5px 0; /* Diminuído o espaçamento entre os links do menu em dispositivos móveis */
   }
 
   .menu-toggle {
@@ -284,7 +355,6 @@ footer a:hover {
   }
 }
 
-/* For Mobile */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 2rem;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,26 @@
   <title>Prod Gini | Music Producer</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 </head>
+
 <body>
   <header>
     <div class="logo">
       <img src="img/logo.jpg" alt="Prod Gini Logo">
     </div>
     <nav>
-      <div class="menu-toggle" id="mobile-menu">
+      <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </div>
       <ul class="nav-links">
-        <li><a href="#portfolio">Portfolio</a></li>
+        <!-- <li><a href="#portfolio">Portfolio</a></li> -->
         <li><a href="#services">Serviços</a></li>
-        <!-- <li><a href="#latest-video">Latest Video</a></li> -->
-        <li><a href="#links">Minhas Redes</a></li>
+        <li><a href="#latest-releases">Últimos Lançamentos</a></li>
+        <!-- <li><a href="#latest-video">Último Vídeo</a></li> -->
+        <!-- <li><a href="#photo-gallery">Galeria</a></li> -->
+        <!-- <li><a href="#media-kit">Media Kit</a></li> -->
+        <!-- <li><a href="#mission">Missão, Visão e Valores</a></li> -->
         <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
@@ -32,65 +38,140 @@
   <div class="hero">
     <h1>Prod. Gini</h1>
     <p>Professional Music Production.</p>
+    <a href="https://wa.me/+5516981358501" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">📞
+      Fale comigo no WhatsApp</a>
+    <section id="links">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/arthurgini/" target="_blank" aria-label="Instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@ProdGini" target="_blank" aria-label="YouTube"><i
+            class="fab fa-youtube"></i></a>
+        <a href="https://open.spotify.com/intl-pt/artist/4hZavO7nMHDg80PhEly9an?si=YuXPGfGDQsCpQQQFPTgKxw"
+          target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+      </div>
+    </section>
   </div>
 
   <main>
-    <section id="portfolio">
-      <h2>Ultimo Lançamento:</h2>
+
+    <!-- 
+    <section id="photo-gallery">
+      <h2>Galeria</h2>
+      <div class="gallery">
+        <a href="https://images.unsplash.com/photo-1514506453305-06376e01a881" data-lightbox="mygallery"
+          data-title="Show 1"><img src="https://images.unsplash.com/photo-1514506453305-06376e01a881"
+            alt="Show 1" /></a>
+        <a href="https://images.unsplash.com/photo-1565299624941-19c4f7d9063e" data-lightbox="mygallery"
+          data-title="Show 2"><img src="https://images.unsplash.com/photo-1565299624941-19c4f7d9063e"
+            alt="Show 2" /></a>
+        <a href="https://images.unsplash.com/photo-1494248078070-32e6454a3721" data-lightbox="mygallery"
+          data-title="Estúdio 1"><img src="https://images.unsplash.com/photo-1494248078070-32e6454a3721"
+            alt="Estúdio 1" /></a>
+        <a href="https://images.unsplash.com/photo-1550990610-35f69331bcf0" data-lightbox="mygallery"
+          data-title="Estúdio 2"><img src="https://images.unsplash.com/photo-1550990610-35f69331bcf0"
+            alt="Estúdio 2" /></a>
+      </div>
+    </section> -->
+
+    <section id="latest-releases">
+      <h2>Últimos Lançamentos:</h2>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/artist/4hZavO7nMHDg80PhEly9an?utm_source=generator&theme=0" width="100%"
+        height="352" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       <div class="highlight-link">
         <a href="https://artists.landr.com/055855356963" target="_blank">Gini - Minha fé</a>
       </div>
     </section>
-
-    <section id="services">
-      <h2>Serviços de produção:</h2>
-      <div class="service-list">
-        <div class="service-item">
-          <h3>Catalogo de Beats</h3>
-          <p>Beats unicos vindo diretamente da gringa.</p>
-        </div>
-        <div class="service-item">
-          <h3>Produção musical</h3>
-          <p>Do inicio ao fim te auxilo a fazer aquele som.</p>
-        </div>
-        <div class="service-item">
-          <h3>Mix e Master</h3>
-          <p>Mix e Master professional garantindo que sim, seu som vai bater.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section id="latest-video">
-      <h2>Latest Video</h2>
+    <!-- 
+    <section id="latest-video">
+      <h2>Último Vídeo</h2>
       <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/v=EVFbBC7N8Lg" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=FegMRM2Wtl4" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
-      </div>
-      <div class="highlight-link">
-        <a href="https://www.youtube.com/watch?v=v=EVFbBC7N8Lg" target="_blank">Watch on YouTube</a>
       </div>
     </section> -->
 
-    <section id="links">
-      <h2>Minhas Redes:</h2>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/arthurgini/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@ProdGini" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://open.spotify.com/intl-pt/artist/4hZavO7nMHDg80PhEly9an?si=YuXPGfGDQsCpQQQFPTgKxw" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
-        <!-- <a href="https://soundcloud.com/arthurgini" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a> -->
-        <!-- <a href="https://linkedin.com/arthurgini" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a> -->
+    <section id="services">
+      <h2>Serviços de Produção:</h2>
+      <div class="service-list">
+
+        <div class="service-item">
+          <a href="https://www.youtube.com/watch?v=N7fw4eswez8&list=PLI3tHaWWFbT8O-DnBZXwHIKThTwBpjMQQ" target="_blank">
+            <h3>Catálogo de Beats</h3>
+            <p>Beats únicos vindo diretamente de outro universo.</p>
+          </a>
+        </div>
+
+        <div class="service-item">
+          <a href="https://wa.me/+5516981358501" target="_blank">
+            <h3>Produção Musical</h3>
+            <p>Do início ao fim, te auxilio a fazer aquele som.</p>
+          </a>
+        </div>
+
+        <div class="service-item">
+          <a href="https://wa.me/+5516981358501" target="_blank">
+            <h3>Mix e Master</h3>
+            <p>Mix e Master profissional garantindo que sim, seu som vai bater.</p>
+          </a>
+        </div>
+
       </div>
     </section>
+
+    <!-- <section id="media-kit">
+      <h2>Media Kit</h2>
+      <p>Baixe e visualize meu media kit para mais informações sobre meu trabalho e serviços.</p>
+      <a href="path/to/your/media-kit.pdf" class="download-button" target="_blank">📥 Download Media Kit</a>
+    </section> -->
   </main>
 
   <footer id="contact">
     <h2>Contato</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/arthurgini/" target="_blank" aria-label="Instagram"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@ProdGini" target="_blank" aria-label="YouTube"><i
+          class="fab fa-youtube"></i></a>
+      <a href="https://open.spotify.com/intl-pt/artist/4hZavO7nMHDg80PhEly9an?si=YuXPGfGDQsCpQQQFPTgKxw" target="_blank"
+        aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+    </div>
     <p>Me envie um email: <a href="mailto:arthurbgini@gmail.com">arthurbgini@gmail.com</a></p>
     <p>&copy; 2024 Todos os direitos reservados.</p>
   </footer>
 
+
+  <!-- <section id="mission">
+    <h2>Missão, Visão e Valores</h2>
+    <div class="mission-vision-values">
+      <div class="mission">
+        <h3>Missão</h3>
+        <p>Produzir música de qualidade que ressoe com a verdade e a autenticidade de cada artista, promovendo uma
+          conexão genuína com o público.</p>
+      </div>
+      <div class="vision">
+        <h3>Visão</h3>
+        <p>Ser uma referência no cenário musical, reconhecido pela inovação, qualidade e impacto emocional das
+          produções.</p>
+      </div>
+      <div class="values">
+        <h3>Valores</h3>
+        <ul>
+          <li>Autenticidade</li>
+          <li>Inovação</li>
+          <li>Qualidade</li>
+          <li>Transparência</li>
+          <li>Colaboração</li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script>
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
@@ -99,4 +180,5 @@
     });
   </script>
 </body>
+
 </html>
